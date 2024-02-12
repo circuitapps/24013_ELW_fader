@@ -9,7 +9,7 @@
   You can play with the values in pwm_levels[] array and its length as well as the LED_EFFECT_WAIT_TIME definition to experiment with different fading effects. Sky is the limit here!
   
   by circuitapps
-  January 2024
+  February 2024
 */
 #include <avr/io.h>
 
@@ -46,7 +46,6 @@ void setup()
 }
 
 // the loop function runs over and over again forever
-
 void loop()
 {
   unsigned int count_state = FADE_IN;  // start with fade in effect
@@ -87,5 +86,4 @@ void loop()
     }
   }
 
-  //fader_state_machine();
 }
